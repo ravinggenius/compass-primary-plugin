@@ -1,0 +1,31 @@
+@import compass/reset
+@import compass/layout/primary
+
+@include reset-html5
+
+//
+  The following variables are used by Primary
+  $primary-selector-header: header
+  $primary-selector-section-primary: '#primary'
+  $primary-selector-section-secondary: '#secondary'
+  $primary-selector-section-tertiary: '#tertiary'
+  $primary-selector-section-quaternary: '#quaternary'
+  $primary-selector-section-quinary: '#quinary'
+
+body
+  @include primary-layout-01
+  margin: 0 auto
+  width: 960px
+
+header
+  background-color: #FFFF00
+#primary
+  background-color: #FF0000
+#secondary
+  background-color: #00FF00
+#tertiary
+  background-color: #0000FF
+#quaternary
+  background-color: #FF00FF
+#quinary
+  background-color: #00FFFF
