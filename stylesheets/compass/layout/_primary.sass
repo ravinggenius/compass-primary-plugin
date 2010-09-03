@@ -1,11 +1,11 @@
 // Adapted from http://www.primarycss.com/
 
 $primary-selector-header: header !default
-$primary-selector-section-primary: '#primary' !default
-$primary-selector-section-secondary: '#secondary' !default
-$primary-selector-section-tertiary: '#tertiary' !default
-$primary-selector-section-quaternary: '#quaternary' !default
-$primary-selector-section-quinary: '#quinary' !default
+$primary-selector-primary: '#primary' !default
+$primary-selector-secondary: '#secondary' !default
+$primary-selector-tertiary: '#tertiary' !default
+$primary-selector-quaternary: '#quaternary' !default
+$primary-selector-quinary: '#quinary' !default
 
 @mixin primary-full-header($height: auto)
   #{$primary-selector-header}
@@ -14,26 +14,26 @@ $primary-selector-section-quinary: '#quinary' !default
 
 @mixin primary-layout-01($height: auto)
   >
-    #{$primary-selector-section-primary},
-    #{$primary-selector-section-secondary},
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
       float: left
       height: $height
-    #{$primary-selector-section-primary},
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-primary},
+    #{$primary-selector-tertiary}
       width: 20%
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-secondary}
       width: 60%
 
 @mixin primary-layout-02($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary},
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-primary},
+    #{$primary-selector-tertiary}
       float: left
       height: $height
       width: 20%
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-secondary}
       float: left
       height: $height
       width: 60%
@@ -41,9 +41,9 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-03($width: 100%, $height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary},
-    #{$primary-selector-section-secondary},
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
       float: left
       height: $height
       width: $width / 3
@@ -51,10 +51,10 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-04($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary},
-    #{$primary-selector-section-secondary},
-    #{$primary-selector-section-tertiary},
-    #{$primary-selector-section-quaternary}
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary}
       float: left
       height: $height
       width: 25%
@@ -62,11 +62,11 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-05($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary}
+    #{$primary-selector-primary}
       float: left
       height: $height
       width: 30%
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-secondary}
       float: left
       height: $height
       width: 70%
@@ -74,11 +74,11 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-06($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary}
+    #{$primary-selector-primary}
       float: left
       height: $height
       width: 70%
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-secondary}
       float: left
       height: $height
       width: 30%
@@ -86,12 +86,12 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-07($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary},
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary}
       float: left
       height: $height
       width: 20%
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-tertiary}
       float: left
       height: $height
       width: 60%
@@ -99,12 +99,12 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-08($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary}
+    #{$primary-selector-primary}
       float: left
       height: $height
       width: 60%
-    #{$primary-selector-section-secondary},
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
       float: left
       height: $height
       width: 20%
@@ -112,11 +112,11 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-09($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary}
+    #{$primary-selector-primary}
       float: left
       height: $height
       width: 100%
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-secondary}
       float: left
       height: 100px
       width: 100%
@@ -125,15 +125,15 @@ $primary-selector-section-quinary: '#quinary' !default
   >
     @include primary-full-header($header-height)
     $height: $height / 9
-    #{$primary-selector-section-primary}
+    #{$primary-selector-primary}
       float: left
       height: $height * 2
       width: 100%
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-secondary}
       float: left
       height: $height * 6
       width: 100%
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-tertiary}
       float: left
       height: $height
       width: 100%
@@ -141,8 +141,8 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-11($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary},
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary}
       float: left
       height: $height
       width: 50%
@@ -150,12 +150,12 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-12($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary}
+    #{$primary-selector-primary}
       float: left
       height: $height
       width: 50%
-    #{$primary-selector-section-secondary},
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
       float: left
       height: $height / 2
       width: 50%
@@ -165,18 +165,18 @@ $primary-selector-section-quinary: '#quinary' !default
   >
     @include primary-full-header($header-height)
     $height: $height / 2
-    #{$primary-selector-section-primary}
+    #{$primary-selector-primary}
       float: left
       height: $height
       width: 50%
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-secondary}
       float: left
       height: $height
       left: -50%
       position: relative
       top: $height
       width: 50%
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-tertiary}
       float: right
       height: $height * 2
       position: relative
@@ -186,13 +186,13 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-14($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary},
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary}
       float: left
       height: $height
       width: 25%
-    #{$primary-selector-section-tertiary},
-    #{$primary-selector-section-quaternary}
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary}
       float: left
       height: $height / 2
       width: 50%
@@ -202,19 +202,19 @@ $primary-selector-section-quinary: '#quinary' !default
   >
     @include primary-full-header($header-height)
     $height: $height / 2
-    #{$primary-selector-section-primary}
+    #{$primary-selector-primary}
       float: left
       height: $height
       width: 50%
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-secondary}
       float: left
       height: $height
       left: -50%
       position: relative
       top: $height
       width: 50%
-    #{$primary-selector-section-tertiary},
-    #{$primary-selector-section-quaternary}
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary}
       float: right
       height: $height * 2
       position: relative
@@ -224,10 +224,10 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-16($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary},
-    #{$primary-selector-section-secondary},
-    #{$primary-selector-section-tertiary},
-    #{$primary-selector-section-quaternary}
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary}
       float: left
       height: $height
       width: 50%
@@ -238,14 +238,14 @@ $primary-selector-section-quinary: '#quinary' !default
       height: $header-height
       margin: 0 auto
       width: 60%
-    #{$primary-selector-section-primary},
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-primary},
+    #{$primary-selector-tertiary}
       float: left
       //height: calc(#{$height} + #{$header-height})
       //margin:
         top: -$header-height
       width: 20%
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-secondary}
       float: left
       height: $height
       width: 60%
@@ -253,13 +253,13 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-18($width: 100%, $height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary}
+    #{$primary-selector-primary}
       float: left
       height: $height / 3
       width: 100%
-    #{$primary-selector-section-secondary},
-    #{$primary-selector-section-tertiary},
-    #{$primary-selector-section-quaternary}
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary}
       float: left
       height: $height
       width: $width / 3
@@ -267,15 +267,15 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-19($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary},
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary}
       float: left
       height: $height / 2
-    #{$primary-selector-section-primary}
+    #{$primary-selector-primary}
       width: 30%
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-secondary}
       width: 70%
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-tertiary}
       float: left
       height: $height
       width: 100%
@@ -283,15 +283,15 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-20($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary},
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary}
       float: left
       height: $height / 2
-    #{$primary-selector-section-primary}
+    #{$primary-selector-primary}
       width: 70%
-    #{$primary-selector-section-secondary}
+    #{$primary-selector-secondary}
       width: 30%
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-tertiary}
       float: left
       height: $height
       width: 100%
@@ -299,13 +299,13 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-21($width: 100%, $height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary},
-    #{$primary-selector-section-secondary},
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
       float: left
       height: $height / 2
       width: $width / 3
-    #{$primary-selector-section-quaternary}
+    #{$primary-selector-quaternary}
       float: left
       height: $height
       width: 100%
@@ -313,12 +313,12 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-22($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary}
+    #{$primary-selector-primary}
       float: left
       height: $height / 3
       width: 100%
-    #{$primary-selector-section-secondary},
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
       float: left
       height: $height
       width: 50%
@@ -326,14 +326,14 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-23($width: 100%, $height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary},
-    #{$primary-selector-section-secondary},
-    #{$primary-selector-section-tertiary}
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
       float: left
       height: $height / 2
       width: $width / 3
-    #{$primary-selector-section-quaternary},
-    #{$primary-selector-section-quinary}
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary}
       float: left
       height: $height
       width: 50%
@@ -341,7 +341,7 @@ $primary-selector-section-quinary: '#quinary' !default
 @mixin primary-layout-24($height: auto, $header-height: 100%)
   >
     @include primary-full-header($header-height)
-    #{$primary-selector-section-primary}
+    #{$primary-selector-primary}
       float: left
       height: $height
       margin:
@@ -350,7 +350,7 @@ $primary-selector-section-quinary: '#quinary' !default
 
 @mixin primary-layout-25($height: auto)
   >
-    #{$primary-selector-section-primary}
+    #{$primary-selector-primary}
       float: left
       height: $height
       width: 100%
