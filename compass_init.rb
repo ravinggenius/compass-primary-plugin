@@ -1,1 +1,1 @@
-Compass::Frameworks.register("compass-layouts", File.dirname(__FILE__))
+Compass::Frameworks.register('compass-layouts', File.dirname(__FILE__))
