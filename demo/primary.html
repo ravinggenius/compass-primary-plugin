@@ -4,9 +4,47 @@
     <title>compass-primary-plugin</title>
     <meta content='application/xhtml+xml; charset=utf-8' http-equiv='Content-Type' />
     <link href='css/primary.css' rel='stylesheet' type='text/css' />
+    <script type="text/javascript">
+      //<![CDATA[
+        window.onload = function () {
+          document.getElementById('selector').onchange = function () {
+            document.body.className = 'primary-' + this.options[this.selectedIndex].value;
+          };
+        };
+      //]]>
+    </script>
   </head>
   <body>
-    <header>header</header>
+    <header>
+      <select id="selector">
+        <option>header</option>
+        <option value="01">Primary Layout 01</option>
+        <option value="02">Primary Layout 02</option>
+        <option value="03">Primary Layout 03</option>
+        <option value="04">Primary Layout 04</option>
+        <option value="05">Primary Layout 05</option>
+        <option value="06">Primary Layout 06</option>
+        <option value="07">Primary Layout 07</option>
+        <option value="08">Primary Layout 08</option>
+        <option value="09">Primary Layout 09</option>
+        <option value="10">Primary Layout 10</option>
+        <option value="11">Primary Layout 11</option>
+        <option value="12">Primary Layout 12</option>
+        <option value="13">Primary Layout 13</option>
+        <option value="14">Primary Layout 14</option>
+        <option value="15">Primary Layout 15</option>
+        <option value="16">Primary Layout 16</option>
+        <option value="17">Primary Layout 17</option>
+        <option value="18">Primary Layout 18</option>
+        <option value="19">Primary Layout 19</option>
+        <option value="20">Primary Layout 20</option>
+        <option value="21">Primary Layout 21</option>
+        <option value="22">Primary Layout 22</option>
+        <option value="23">Primary Layout 23</option>
+        <option value="24">Primary Layout 24</option>
+        <option value="25">Primary Layout 25</option>
+      </select>
+    </header>
     <section id='primary'>section#primary</section>
     <section id='secondary'>section#secondary</section>
     <section id='tertiary'>section#tertiary</section>
