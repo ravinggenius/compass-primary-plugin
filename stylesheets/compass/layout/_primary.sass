@@ -7,16 +7,17 @@ $primary-selector-tertiary: '#tertiary' !default
 $primary-selector-quaternary: '#quaternary' !default
 $primary-selector-quinary: '#quinary' !default
 
-$primary-default-header-height: 100px !default
-$primary-default-height: 800px !default
-$primary-height-warning: 'This layout must have a height set. Setting height to $primary-default-height (#{$primary-default-height}).'
 
-@mixin primary-full-header($height: $primary-default-height)
+$primary-header-height: 100px !default
+$primary-height: 800px !default
+$primary-height-warning: 'This layout must have a height set. Setting height to $primary-height (#{$primary-height}).'
+
+@mixin primary-full-header($height: $primary-height)
   #{$primary-selector-header}
+    @include primary-column(10)
     height: $height
-    width: 100%
 
-@mixin primary-layout-01($height: $primary-default-height)
+@mixin primary-layout-01($height: $primary-height)
   >
     #{$primary-selector-primary},
     #{$primary-selector-secondary},
@@ -29,7 +30,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
     #{$primary-selector-secondary}
       width: 60%
 
-@mixin primary-layout-02($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-02($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary},
@@ -42,7 +43,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: 60%
 
-@mixin primary-layout-03($width: 100%, $height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-03($width: 100%, $height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary},
@@ -52,7 +53,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: $width / 3
 
-@mixin primary-layout-04($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-04($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary},
@@ -63,7 +64,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: 25%
 
-@mixin primary-layout-05($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-05($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary}
@@ -75,7 +76,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: 70%
 
-@mixin primary-layout-06($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-06($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary}
@@ -87,7 +88,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: 30%
 
-@mixin primary-layout-07($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-07($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary},
@@ -100,7 +101,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: 60%
 
-@mixin primary-layout-08($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-08($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary}
@@ -113,7 +114,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: 20%
 
-@mixin primary-layout-09($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-09($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary}
@@ -125,7 +126,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: 100px
       width: 100%
 
-@mixin primary-layout-10($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-10($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     @if $height != auto
@@ -146,7 +147,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
         height: $height
       width: 100%
 
-@mixin primary-layout-11($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-11($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary},
@@ -155,7 +156,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: 50%
 
-@mixin primary-layout-12($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-12($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary}
@@ -168,12 +169,12 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height / 2
       width: 50%
 
-@mixin primary-layout-13($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-13($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     @if $height == auto
       @warn #{$primary-height-warning}
-      $height: $primary-default-height
+      $height: $primary-height
     $height: $height / 2
     #{$primary-selector-primary}
       float: left
@@ -193,7 +194,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       top: -$height
       width: 50%
 
-@mixin primary-layout-14($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-14($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary},
@@ -207,12 +208,12 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height / 2
       width: 50%
 
-@mixin primary-layout-15($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-15($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     @if $height == auto
       @warn #{$primary-height-warning}
-      $height: $primary-default-height
+      $height: $primary-height
     $height: $height / 2
     #{$primary-selector-primary}
       float: left
@@ -233,7 +234,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       top: -$height
       width: 25%
 
-@mixin primary-layout-16($height: $primary-default-height / 2, $header-height: $primary-default-header-height)
+@mixin primary-layout-16($height: $primary-height / 2, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary},
@@ -245,7 +246,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       width: 50%
 
 // FIXME side columns don't display correctly
-@mixin primary-layout-17($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-17($height: $primary-height, $header-height: $primary-header-height)
   >
     #{$primary-selector-header}
       height: $header-height
@@ -263,7 +264,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: 60%
 
-@mixin primary-layout-18($width: 100%, $height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-18($width: 100%, $height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary}
@@ -277,7 +278,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: $width / 3
 
-@mixin primary-layout-19($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-19($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary},
@@ -293,7 +294,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: 100%
 
-@mixin primary-layout-20($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-20($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary},
@@ -309,7 +310,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: 100%
 
-@mixin primary-layout-21($width: 100%, $height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-21($width: 100%, $height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary},
@@ -323,7 +324,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: 100%
 
-@mixin primary-layout-22($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-22($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary}
@@ -336,7 +337,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: 50%
 
-@mixin primary-layout-23($width: 100%, $height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-23($width: 100%, $height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary},
@@ -351,7 +352,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
       height: $height
       width: 50%
 
-@mixin primary-layout-24($height: $primary-default-height, $header-height: $primary-default-header-height)
+@mixin primary-layout-24($height: $primary-height, $header-height: $primary-header-height)
   >
     @include primary-full-header($header-height)
     #{$primary-selector-primary}
@@ -361,7 +362,7 @@ $primary-height-warning: 'This layout must have a height set. Setting height to 
         top: 100px
       width: 100%
 
-@mixin primary-layout-25($height: $primary-default-height)
+@mixin primary-layout-25($height: $primary-height)
   >
     #{$primary-selector-primary}
       height: $height
