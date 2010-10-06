@@ -55,9 +55,9 @@ $primary-height-warning: 'This layout works best when some heights are set.'
       @include primary-column($columns-tertiary)
 
 // FIXME
-@mixin primary-layout-three-alternate($header-height, $header-width: 6)
+@mixin primary-layout-three-alternate($header-height, $columns-header: 6)
   >
-    @include primary-header($header-width)
+    @include primary-header($columns-header)
     #{$primary-selector-header}
       height: $header-height
     #{$primary-selector-primary},
@@ -66,12 +66,12 @@ $primary-height-warning: 'This layout works best when some heights are set.'
       float: left
     #{$primary-selector-primary},
     #{$primary-selector-tertiary}
-      @include primary-column(($primary-column-count - $header-width) / 2)
+      @include primary-column(($primary-column-count - $columns-header) / 2)
       min-height: $header-height * 2
       margin:
         top: -$header-height
     #{$primary-selector-secondary}
-      @include primary-column($header-width)
+      @include primary-column($columns-header)
 
 @mixin primary-layout-four($include-header: true)
   >
