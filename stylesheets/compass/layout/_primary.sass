@@ -54,24 +54,27 @@ $primary-height-warning: 'This layout works best when some heights are set.'
     #{$primary-selector-tertiary}
       @include primary-column($columns-tertiary)
 
-// FIXME
-@mixin primary-layout-three-alternate($header-height, $columns-header: 6)
+@mixin primary-layout-three-alternate($header-height, $columns-header: $primary-column-count * 0.6, $columns-primary: ($primary-column-count - $columns-header) / 2, $columns-tertiary: $primary-column-count - $columns-header - $columns-primary)
   >
     @include primary-header($columns-header)
     #{$primary-selector-header}
       height: $header-height
+      left: $primary-column-width * $columns-primary
+      position: relative
     #{$primary-selector-primary},
     #{$primary-selector-secondary},
     #{$primary-selector-tertiary}
       float: left
-    #{$primary-selector-primary},
-    #{$primary-selector-tertiary}
-      @include primary-column(($primary-column-count - $columns-header) / 2)
-      min-height: $header-height * 2
-      margin:
-        top: -$header-height
+    #{$primary-selector-primary}
+      @include primary-column($columns-primary)
     #{$primary-selector-secondary}
       @include primary-column($columns-header)
+    #{$primary-selector-tertiary}
+      @include primary-column($columns-tertiary)
+    #{$primary-selector-primary},
+    #{$primary-selector-tertiary}
+      margin-top: -$header-height
+      min-height: $header-height + 1
 
 @mixin primary-layout-four($include-header: true)
   >
