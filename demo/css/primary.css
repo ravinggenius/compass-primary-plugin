@@ -129,6 +129,8 @@ body.primary-17 > #primary { margin: 0 1%; padding: 0 1%; width: 16%; }
 body.primary-17 > #secondary { margin: 0 1%; padding: 0 1%; width: 56%; }
 body.primary-17 > #tertiary { margin: 0 1%; padding: 0 1%; width: 16%; }
 body.primary-17 > #primary, body.primary-17 > #tertiary { margin-top: -150px; min-height: 151px; }
+body.primary-17 #primary, body.primary-17 #tertiary { height: 400px; }
+body.primary-17 #secondary { height: 250px; }
 body.primary-17 #quaternary, body.primary-17 #quinary, body.primary-17 footer { display: none; height: 0; width: 0; }
 body.primary-18 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
 body.primary-18 > #primary, body.primary-18 > #secondary, body.primary-18 > #tertiary, body.primary-18 > #quaternary { float: left; }

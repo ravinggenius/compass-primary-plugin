@@ -217,6 +217,11 @@ body
 
   &.primary-17
     @include primary-layout-three-alternate(150px)
+    #{$primary-selector-primary},
+    #{$primary-selector-tertiary}
+      height: 400px
+    #{$primary-selector-secondary}
+      height: 250px
     #{$primary-selector-quaternary},
     #{$primary-selector-quinary},
     #{$primary-selector-footer}
