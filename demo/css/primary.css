@@ -16,81 +16,184 @@ a img { border: none; }
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
 body { margin: 0 auto; width: 960px; }
-body.primary-01 > #primary, body.primary-01 > #secondary, body.primary-01 > #tertiary { float: left; height: 800px; }
-body.primary-01 > #primary, body.primary-01 > #tertiary { width: 20%; }
-body.primary-01 > #secondary { width: 60%; }
-body.primary-02 > header { height: 100px; width: 100%; }
-body.primary-02 > #primary, body.primary-02 > #tertiary { float: left; height: 800px; width: 20%; }
-body.primary-02 > #secondary { float: left; height: 800px; width: 60%; }
-body.primary-03 > header { height: 100px; width: 100%; }
-body.primary-03 > #primary, body.primary-03 > #secondary, body.primary-03 > #tertiary { float: left; height: 800px; width: 33.333%; }
-body.primary-04 > header { height: 100px; width: 100%; }
-body.primary-04 > #primary, body.primary-04 > #secondary, body.primary-04 > #tertiary, body.primary-04 > #quaternary { float: left; height: 800px; width: 25%; }
-body.primary-05 > header { height: 100px; width: 100%; }
-body.primary-05 > #primary { float: left; height: 800px; width: 30%; }
-body.primary-05 > #secondary { float: left; height: 800px; width: 70%; }
-body.primary-06 > header { height: 100px; width: 100%; }
-body.primary-06 > #primary { float: left; height: 800px; width: 70%; }
-body.primary-06 > #secondary { float: left; height: 800px; width: 30%; }
-body.primary-07 > header { height: 100px; width: 100%; }
-body.primary-07 > #primary, body.primary-07 > #secondary { float: left; height: 800px; width: 20%; }
-body.primary-07 > #tertiary { float: left; height: 800px; width: 60%; }
-body.primary-08 > header { height: 100px; width: 100%; }
-body.primary-08 > #primary { float: left; height: 800px; width: 60%; }
-body.primary-08 > #secondary, body.primary-08 > #tertiary { float: left; height: 800px; width: 20%; }
-body.primary-09 > header { height: 100px; width: 100%; }
-body.primary-09 > #primary { float: left; height: 800px; width: 100%; }
-body.primary-09 > #secondary { float: left; height: 100px; width: 100%; }
-body.primary-10 > header { height: 100px; width: 100%; }
-body.primary-10 > #primary { float: left; height: 177.778px; width: 100%; }
-body.primary-10 > #secondary { float: left; height: 533.333px; width: 100%; }
-body.primary-10 > #tertiary { float: left; height: 88.889px; width: 100%; }
-body.primary-11 > header { height: 100px; width: 100%; }
-body.primary-11 > #primary, body.primary-11 > #secondary { float: left; height: 800px; width: 50%; }
-body.primary-12 > header { height: 100px; width: 100%; }
-body.primary-12 > #primary { float: left; height: 800px; width: 50%; }
-body.primary-12 > #secondary, body.primary-12 > #tertiary { float: left; height: 400px; width: 50%; }
-body.primary-13 > header { height: 100px; width: 100%; }
-body.primary-13 > #primary { float: left; height: 400px; width: 50%; }
-body.primary-13 > #secondary { float: left; height: 400px; left: -50%; position: relative; top: 400px; width: 50%; }
-body.primary-13 > #tertiary { float: right; height: 800px; position: relative; top: -400px; width: 50%; }
-body.primary-14 > header { height: 100px; width: 100%; }
-body.primary-14 > #primary, body.primary-14 > #secondary { float: left; height: 800px; width: 25%; }
-body.primary-14 > #tertiary, body.primary-14 > #quaternary { float: left; height: 400px; width: 50%; }
-body.primary-15 > header { height: 100px; width: 100%; }
-body.primary-15 > #primary { float: left; height: 400px; width: 50%; }
-body.primary-15 > #secondary { float: left; height: 400px; left: -50%; position: relative; top: 400px; width: 50%; }
-body.primary-15 > #tertiary, body.primary-15 > #quaternary { float: right; height: 800px; position: relative; top: -400px; width: 25%; }
-body.primary-16 > header { height: 100px; width: 100%; }
-body.primary-16 > #primary, body.primary-16 > #secondary, body.primary-16 > #tertiary, body.primary-16 > #quaternary { float: left; height: 400px; width: 50%; }
-body.primary-17 > header { height: 100px; margin: 0 auto; width: 60%; }
-body.primary-17 > #primary, body.primary-17 > #tertiary { float: left; width: 20%; }
-body.primary-17 > #secondary { float: left; height: 800px; width: 60%; }
-body.primary-18 > header { height: 100px; width: 100%; }
-body.primary-18 > #primary { float: left; height: 266.667px; width: 100%; }
-body.primary-18 > #secondary, body.primary-18 > #tertiary, body.primary-18 > #quaternary { float: left; height: 800px; width: 33.333%; }
-body.primary-19 > header { height: 100px; width: 100%; }
-body.primary-19 > #primary, body.primary-19 > #secondary { float: left; height: 400px; }
-body.primary-19 > #primary { width: 30%; }
-body.primary-19 > #secondary { width: 70%; }
-body.primary-19 > #tertiary { float: left; height: 800px; width: 100%; }
-body.primary-20 > header { height: 100px; width: 100%; }
-body.primary-20 > #primary, body.primary-20 > #secondary { float: left; height: 400px; }
-body.primary-20 > #primary { width: 70%; }
-body.primary-20 > #secondary { width: 30%; }
-body.primary-20 > #tertiary { float: left; height: 800px; width: 100%; }
-body.primary-21 > header { height: 100px; width: 100%; }
-body.primary-21 > #primary, body.primary-21 > #secondary, body.primary-21 > #tertiary { float: left; height: 400px; width: 33.333%; }
-body.primary-21 > #quaternary { float: left; height: 800px; width: 100%; }
-body.primary-22 > header { height: 100px; width: 100%; }
-body.primary-22 > #primary { float: left; height: 266.667px; width: 100%; }
-body.primary-22 > #secondary, body.primary-22 > #tertiary { float: left; height: 800px; width: 50%; }
-body.primary-23 > header { height: 100px; width: 100%; }
-body.primary-23 > #primary, body.primary-23 > #secondary, body.primary-23 > #tertiary { float: left; height: 400px; width: 33.333%; }
-body.primary-23 > #quaternary, body.primary-23 > #quinary { float: left; height: 800px; width: 50%; }
-body.primary-24 > header { height: 100px; width: 100%; }
-body.primary-24 > #primary { float: left; height: 800px; margin-top: 100px; width: 100%; }
-body.primary-25 > #primary { height: 800px; width: 100%; }
+body.primary-01 > #primary, body.primary-01 > #secondary, body.primary-01 > #tertiary { float: left; }
+body.primary-01 > #primary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-01 > #secondary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-01 > #tertiary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-01 #primary, body.primary-01 #secondary, body.primary-01 #tertiary { height: 400px; }
+body.primary-01 #quaternary, body.primary-01 #quinary, body.primary-01 footer { display: none; height: 0; width: 0; }
+body.primary-02 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-02 > #primary, body.primary-02 > #secondary, body.primary-02 > #tertiary { float: left; }
+body.primary-02 > #primary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-02 > #secondary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-02 > #tertiary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-02 header { height: 150px; }
+body.primary-02 #primary, body.primary-02 #secondary, body.primary-02 #tertiary { height: 400px; }
+body.primary-02 #quaternary, body.primary-02 #quinary, body.primary-02 footer { display: none; height: 0; width: 0; }
+body.primary-03 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-03 > #primary, body.primary-03 > #secondary, body.primary-03 > #tertiary { float: left; }
+body.primary-03 > #primary { margin: 0 1%; padding: 0 1%; width: 29.33%; }
+body.primary-03 > #secondary { margin: 0 1%; padding: 0 1%; width: 29.33%; }
+body.primary-03 > #tertiary { margin: 0 1%; padding: 0 1%; width: 29.33%; }
+body.primary-03 header { height: 150px; }
+body.primary-03 #primary, body.primary-03 #secondary, body.primary-03 #tertiary { height: 400px; }
+body.primary-03 #quaternary, body.primary-03 #quinary, body.primary-03 footer { display: none; height: 0; width: 0; }
+body.primary-04 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-04 > #primary, body.primary-04 > #secondary, body.primary-04 > #tertiary, body.primary-04 > #quaternary { margin: 0 1%; padding: 0 1%; width: 21%; float: left; }
+body.primary-04 header { height: 150px; }
+body.primary-04 #primary, body.primary-04 #secondary, body.primary-04 #tertiary, body.primary-04 #quaternary { height: 400px; }
+body.primary-04 #quinary, body.primary-04 footer { display: none; height: 0; width: 0; }
+body.primary-05 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-05 > #primary, body.primary-05 > #secondary { float: left; }
+body.primary-05 > #primary { margin: 0 1%; padding: 0 1%; width: 26%; }
+body.primary-05 > #secondary { margin: 0 1%; padding: 0 1%; width: 66%; }
+body.primary-05 header { height: 150px; }
+body.primary-05 #primary, body.primary-05 #secondary { height: 400px; }
+body.primary-05 #tertiary, body.primary-05 #quaternary, body.primary-05 #quinary, body.primary-05 footer { display: none; height: 0; width: 0; }
+body.primary-06 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-06 > #primary, body.primary-06 > #secondary { float: left; }
+body.primary-06 > #primary { margin: 0 1%; padding: 0 1%; width: 66%; }
+body.primary-06 > #secondary { margin: 0 1%; padding: 0 1%; width: 26%; }
+body.primary-06 header { height: 150px; }
+body.primary-06 #primary, body.primary-06 #secondary { height: 400px; }
+body.primary-06 #tertiary, body.primary-06 #quaternary, body.primary-06 #quinary, body.primary-06 footer { display: none; height: 0; width: 0; }
+body.primary-07 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-07 > #primary, body.primary-07 > #secondary, body.primary-07 > #tertiary { float: left; }
+body.primary-07 > #primary { margin: 0 1%; padding: 0 1%; width: 16%; }
+body.primary-07 > #secondary { margin: 0 1%; padding: 0 1%; width: 16%; }
+body.primary-07 > #tertiary { margin: 0 1%; padding: 0 1%; width: 56%; }
+body.primary-07 header { height: 150px; }
+body.primary-07 #primary, body.primary-07 #secondary, body.primary-07 #tertiary { height: 400px; }
+body.primary-07 #quaternary, body.primary-07 #quinary, body.primary-07 footer { display: none; height: 0; width: 0; }
+body.primary-08 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-08 > #primary, body.primary-08 > #secondary, body.primary-08 > #tertiary { float: left; }
+body.primary-08 > #primary { margin: 0 1%; padding: 0 1%; width: 56%; }
+body.primary-08 > #secondary { margin: 0 1%; padding: 0 1%; width: 16%; }
+body.primary-08 > #tertiary { margin: 0 1%; padding: 0 1%; width: 16%; }
+body.primary-08 header { height: 150px; }
+body.primary-08 #primary, body.primary-08 #secondary, body.primary-08 #tertiary { height: 400px; }
+body.primary-08 #quaternary, body.primary-08 #quinary, body.primary-08 footer { display: none; height: 0; width: 0; }
+body.primary-09 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-09 > #primary { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-09 > footer { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-09 header, body.primary-09 footer { height: 150px; }
+body.primary-09 #primary { height: 400px; }
+body.primary-09 #secondary, body.primary-09 #tertiary, body.primary-09 #quaternary, body.primary-09 #quinary { display: none; height: 0; width: 0; }
+body.primary-10 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-10 > #primary, body.primary-10 > #secondary { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-10 > footer { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-10 header, body.primary-10 footer { height: 150px; }
+body.primary-10 #primary { height: 100px; }
+body.primary-10 #secondary { height: 300px; }
+body.primary-10 #tertiary, body.primary-10 #quaternary, body.primary-10 #quinary { display: none; height: 0; width: 0; }
+body.primary-11 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-11 > #primary, body.primary-11 > #secondary { float: left; }
+body.primary-11 > #primary { margin: 0 1%; padding: 0 1%; width: 46%; }
+body.primary-11 > #secondary { margin: 0 1%; padding: 0 1%; width: 46%; }
+body.primary-11 header { height: 150px; }
+body.primary-11 #primary, body.primary-11 #secondary { height: 400px; }
+body.primary-11 #tertiary, body.primary-11 #quaternary, body.primary-11 #quinary, body.primary-11 footer { display: none; height: 0; width: 0; }
+body.primary-12 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-12 > #primary, body.primary-12 > #secondary, body.primary-12 > #tertiary { float: left; }
+body.primary-12 > #primary { margin: 0 1%; padding: 0 1%; width: 46%; min-height: 400px; }
+body.primary-12 > #secondary, body.primary-12 > #tertiary { margin: 0 1%; padding: 0 1%; width: 46%; min-height: 200px; }
+body.primary-12 header { height: 150px; }
+body.primary-12 #quaternary, body.primary-12 #quinary, body.primary-12 footer { display: none; height: 0; width: 0; }
+body.primary-13 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-13 > #primary, body.primary-13 > #secondary { margin: 0 1%; padding: 0 1%; width: 46%; float: left; min-height: 200px; }
+body.primary-13 > #secondary { left: -50%; position: relative; top: 200px; }
+body.primary-13 > #tertiary { margin: 0 1%; padding: 0 1%; width: 46%; float: right; min-height: 400px; position: relative; top: -200px; }
+body.primary-13 header { height: 150px; }
+body.primary-13 #quaternary, body.primary-13 #quinary, body.primary-13 footer { display: none; height: 0; width: 0; }
+body.primary-14 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-14 > #primary, body.primary-14 > #secondary, body.primary-14 > #tertiary, body.primary-14 > #quaternary { float: left; }
+body.primary-14 > #primary, body.primary-14 > #secondary { margin: 0 1%; padding: 0 1%; width: 21%; min-height: 400px; }
+body.primary-14 > #tertiary, body.primary-14 > #quaternary { margin: 0 1%; padding: 0 1%; width: 46%; min-height: 200px; }
+body.primary-14 header { height: 150px; }
+body.primary-14 #quinary, body.primary-14 footer { display: none; height: 0; width: 0; }
+body.primary-15 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-15 > #primary, body.primary-15 > #secondary { margin: 0 1%; padding: 0 1%; width: 46%; float: left; min-height: 200px; }
+body.primary-15 > #secondary { left: -50%; position: relative; top: 200px; }
+body.primary-15 > #tertiary, body.primary-15 > #quaternary { margin: 0 1%; padding: 0 1%; width: 21%; float: right; min-height: 400px; position: relative; top: -200px; }
+body.primary-15 header { height: 150px; }
+body.primary-15 #quinary, body.primary-15 footer { display: none; height: 0; width: 0; }
+body.primary-16 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-16 > #primary, body.primary-16 > #secondary, body.primary-16 > #tertiary, body.primary-16 > #quaternary { float: left; margin: 0 1%; padding: 0 1%; width: 46%; }
+body.primary-16 header { height: 150px; }
+body.primary-16 #primary, body.primary-16 #secondary, body.primary-16 #tertiary, body.primary-16 #quaternary { height: 400px; }
+body.primary-16 #quinary, body.primary-16 footer { display: none; height: 0; width: 0; }
+body.primary-17 > header { margin: 0 1%; padding: 0 1%; width: 56%; }
+body.primary-17 > header { height: 150px; }
+body.primary-17 > #primary, body.primary-17 > #secondary, body.primary-17 > #tertiary { float: left; }
+body.primary-17 > #primary, body.primary-17 > #tertiary { margin: 0 1%; padding: 0 1%; width: 16%; min-height: 300px; margin-top: -150px; }
+body.primary-17 > #secondary { margin: 0 1%; padding: 0 1%; width: 56%; }
+body.primary-17 #quaternary, body.primary-17 #quinary, body.primary-17 footer { display: none; height: 0; width: 0; }
+body.primary-18 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-18 > #primary, body.primary-18 > #secondary, body.primary-18 > #tertiary, body.primary-18 > #quaternary { float: left; }
+body.primary-18 > #primary { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-18 > #secondary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-18 > #tertiary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-18 > #quaternary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-18 header { height: 150px; }
+body.primary-18 #primary { height: 100px; }
+body.primary-18 #secondary, body.primary-18 #tertiary, body.primary-18 #quaternary { height: 300px; }
+body.primary-18 #quinary, body.primary-18 footer { display: none; height: 0; width: 0; }
+body.primary-19 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-19 > #primary, body.primary-19 > #secondary, body.primary-19 > #tertiary { float: left; }
+body.primary-19 > #primary { margin: 0 1%; padding: 0 1%; width: 26%; }
+body.primary-19 > #secondary { margin: 0 1%; padding: 0 1%; width: 66%; }
+body.primary-19 > #tertiary { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-19 header { height: 150px; }
+body.primary-19 #primary, body.primary-19 #secondary { height: 100px; }
+body.primary-19 #tertiary { height: 300px; }
+body.primary-19 #quaternary, body.primary-19 #quinary, body.primary-19 footer { display: none; height: 0; width: 0; }
+body.primary-20 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-20 > #primary, body.primary-20 > #secondary, body.primary-20 > #tertiary { float: left; }
+body.primary-20 > #primary { margin: 0 1%; padding: 0 1%; width: 66%; }
+body.primary-20 > #secondary { margin: 0 1%; padding: 0 1%; width: 26%; }
+body.primary-20 > #tertiary { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-20 header { height: 150px; }
+body.primary-20 #primary, body.primary-20 #secondary { height: 100px; }
+body.primary-20 #tertiary { height: 300px; }
+body.primary-20 #quaternary, body.primary-20 #quinary, body.primary-20 footer { display: none; height: 0; width: 0; }
+body.primary-21 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-21 > #primary, body.primary-21 > #secondary, body.primary-21 > #tertiary, body.primary-21 > #quaternary { float: left; }
+body.primary-21 > #primary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-21 > #secondary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-21 > #tertiary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-21 > #quaternary { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-21 header { height: 150px; }
+body.primary-21 #primary, body.primary-21 #secondary, body.primary-21 #tertiary { height: 100px; }
+body.primary-21 #quaternary { height: 300px; }
+body.primary-21 #quinary, body.primary-21 footer { display: none; height: 0; width: 0; }
+body.primary-22 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-22 > #primary, body.primary-22 > #secondary, body.primary-22 > #tertiary { float: left; }
+body.primary-22 > #primary { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-22 > #secondary { margin: 0 1%; padding: 0 1%; width: 46%; }
+body.primary-22 > #tertiary { margin: 0 1%; padding: 0 1%; width: 46%; }
+body.primary-22 header { height: 150px; }
+body.primary-22 #primary { height: 100px; }
+body.primary-22 #secondary, body.primary-22 #tertiary { height: 300px; }
+body.primary-22 #quaternary, body.primary-22 #quinary, body.primary-22 footer { display: none; height: 0; width: 0; }
+body.primary-23 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-23 > #primary, body.primary-23 > #secondary, body.primary-23 > #tertiary, body.primary-23 > #quaternary, body.primary-23 > #quinary { float: left; }
+body.primary-23 > #primary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-23 > #secondary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-23 > #tertiary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-23 > #quaternary { margin: 0 1%; padding: 0 1%; width: 46%; }
+body.primary-23 > #quinary { margin: 0 1%; padding: 0 1%; width: 46%; }
+body.primary-23 header { height: 150px; }
+body.primary-23 #primary, body.primary-23 #secondary, body.primary-23 #tertiary { height: 100px; }
+body.primary-23 #quaternary, body.primary-23 #quinary { height: 300px; }
+body.primary-23 footer { display: none; height: 0; width: 0; }
+body.primary-24 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-24 > #primary { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-24 header { height: 150px; }
+body.primary-24 #primary { height: 400px; }
+body.primary-24 #secondary, body.primary-24 #tertiary, body.primary-24 #quaternary, body.primary-24 #quinary, body.primary-24 footer { display: none; height: 0; width: 0; }
+body.primary-25 > #primary { margin: 0 1%; padding: 0 1%; width: 96%; }
+body.primary-25 #primary { height: 400px; }
+body.primary-25 #secondary, body.primary-25 #tertiary, body.primary-25 #quaternary, body.primary-25 #quinary, body.primary-25 footer { display: none; height: 0; width: 0; }
 
 header { background-color: yellow; }
 
@@ -103,3 +206,5 @@ header { background-color: yellow; }
 #quaternary { background-color: fuchsia; }
 
 #quinary { background-color: aqua; }
+
+footer { background-color: #dddddd; }

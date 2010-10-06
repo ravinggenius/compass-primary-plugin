@@ -1,0 +1,8 @@
+@mixin primary-header($columns: $primary-column-count)
+  #{$primary-selector-header}
+    @include primary-column($columns)
+
+@mixin primary-column($count: 1)
+  margin: 0 $primary-column-margin
+  padding: 0 $primary-column-padding
+  width: ($primary-column-width * $count) - ($primary-column-margin * 2) - ($primary-column-padding * 2)

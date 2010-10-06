@@ -3,6 +3,11 @@
 
 @include reset-html5
 
+@mixin disabled
+  display: none
+  height: 0
+  width: 0
+
 //
   The following variables are used by Primary
   $primary-selector-header: header
@@ -11,62 +16,318 @@
   $primary-selector-tertiary: '#tertiary'
   $primary-selector-quaternary: '#quaternary'
   $primary-selector-quinary: '#quinary'
-  $primary-default-header-height: 100px
-  $primary-default-height: 800px
+  $primary-selector-footer: footer
+  $primary-column-margin: 1%
+  $primary-column-padding: 1%
+  $primary-column-count: 10
 
 body
   margin: 0 auto
   width: 960px
+
   &.primary-01
-    @include primary-layout-01
+    @include primary-layout-three(false)
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
+      height: 400px
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-02
-    @include primary-layout-02
+    @include primary-layout-three
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
+      height: 400px
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-03
-    @include primary-layout-03
+    @include primary-layout-three(true, 3.333, 3.333)
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
+      height: 400px
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-04
-    @include primary-layout-04
+    @include primary-layout-four
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary}
+      height: 400px
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-05
-    @include primary-layout-05
+    @include primary-layout-two(true, 3)
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary}
+      height: 400px
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-06
-    @include primary-layout-06
+    @include primary-layout-two(true, 7)
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary}
+      height: 400px
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-07
-    @include primary-layout-07
+    @include primary-layout-three(true, 2, 2, 6)
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
+      height: 400px
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-08
-    @include primary-layout-08
+    @include primary-layout-three(true, 6, 2, 2)
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
+      height: 400px
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-09
-    @include primary-layout-09
+    @include primary-layout-one(true, true)
+    #{$primary-selector-header},
+    #{$primary-selector-footer}
+      height: 150px
+    #{$primary-selector-primary}
+      height: 400px
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary}
+      @include disabled
+
   &.primary-10
-    @include primary-layout-10
+    @include primary-layout-one-one(true, true)
+    #{$primary-selector-header},
+    #{$primary-selector-footer}
+      height: 150px
+    #{$primary-selector-primary}
+      height: 100px
+    #{$primary-selector-secondary}
+      height: 300px
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary}
+      @include disabled
+
   &.primary-11
-    @include primary-layout-11
+    @include primary-layout-two
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary}
+      height: 400px
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-12
-    @include primary-layout-12
+    @include primary-layout-full-half-half(400px)
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-13
-    @include primary-layout-13
+    @include primary-layout-half-half-full(400px)
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-14
-    @include primary-layout-14
+    @include primary-layout-full-full-half-half(400px)
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-15
-    @include primary-layout-15
+    @include primary-layout-half-half-full-full(400px)
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-16
-    @include primary-layout-16
+    @include primary-layout-two-two
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary}
+      height: 400px
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-17
-    @include primary-layout-17
+    @include primary-layout-three-alternate(150px)
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-18
-    @include primary-layout-18
+    @include primary-layout-one-three
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary}
+      height: 100px
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary}
+      height: 300px
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-19
-    @include primary-layout-19
+    @include primary-layout-two-one(true, 3, 7)
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary}
+      height: 100px
+    #{$primary-selector-tertiary}
+      height: 300px
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-20
-    @include primary-layout-20
+    @include primary-layout-two-one(true, 7, 3)
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary}
+      height: 100px
+    #{$primary-selector-tertiary}
+      height: 300px
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-21
-    @include primary-layout-21
+    @include primary-layout-three-one
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
+      height: 100px
+    #{$primary-selector-quaternary}
+      height: 300px
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-22
-    @include primary-layout-22
+    @include primary-layout-one-two
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary}
+      height: 100px
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
+      height: 300px
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-23
-    @include primary-layout-23
+    @include primary-layout-three-two
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary},
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary}
+      height: 100px
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary}
+      height: 300px
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-24
-    @include primary-layout-24
+    @include primary-layout-one
+    #{$primary-selector-header}
+      height: 150px
+    #{$primary-selector-primary}
+      height: 400px
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
+
   &.primary-25
-    @include primary-layout-25
+    @include primary-layout-one(false)
+    #{$primary-selector-primary}
+      height: 400px
+    #{$primary-selector-secondary},
+    #{$primary-selector-tertiary},
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary},
+    #{$primary-selector-footer}
+      @include disabled
 
 header
   background-color: #FFFF00
@@ -80,3 +341,5 @@ header
   background-color: #FF00FF
 #quinary
   background-color: #00FFFF
+footer
+  background-color: #DDDDDD
