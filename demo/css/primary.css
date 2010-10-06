@@ -21,20 +21,20 @@ body.primary-01 > #primary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
 body.primary-01 > #secondary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
 body.primary-01 > #tertiary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
 body.primary-01 #primary, body.primary-01 #secondary, body.primary-01 #tertiary { height: 400px; }
-body.primary-01 #quaternary, body.primary-01 #quinary, body.primary-01 footer { display: none; height: 0; width: 0; }
+body.primary-01 header, body.primary-01 #quaternary, body.primary-01 #quinary, body.primary-01 footer { display: none; height: 0; width: 0; }
 body.primary-02 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
 body.primary-02 > #primary, body.primary-02 > #secondary, body.primary-02 > #tertiary { float: left; }
-body.primary-02 > #primary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
-body.primary-02 > #secondary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
-body.primary-02 > #tertiary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-02 > #primary { margin: 0 1%; padding: 0 1%; width: 16%; }
+body.primary-02 > #secondary { margin: 0 1%; padding: 0 1%; width: 56%; }
+body.primary-02 > #tertiary { margin: 0 1%; padding: 0 1%; width: 16%; }
 body.primary-02 header { height: 150px; }
 body.primary-02 #primary, body.primary-02 #secondary, body.primary-02 #tertiary { height: 400px; }
 body.primary-02 #quaternary, body.primary-02 #quinary, body.primary-02 footer { display: none; height: 0; width: 0; }
 body.primary-03 > header { margin: 0 1%; padding: 0 1%; width: 96%; }
 body.primary-03 > #primary, body.primary-03 > #secondary, body.primary-03 > #tertiary { float: left; }
-body.primary-03 > #primary { margin: 0 1%; padding: 0 1%; width: 29.33%; }
-body.primary-03 > #secondary { margin: 0 1%; padding: 0 1%; width: 29.33%; }
-body.primary-03 > #tertiary { margin: 0 1%; padding: 0 1%; width: 29.33%; }
+body.primary-03 > #primary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-03 > #secondary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
+body.primary-03 > #tertiary { margin: 0 1%; padding: 0 1%; width: 29.333%; }
 body.primary-03 header { height: 150px; }
 body.primary-03 #primary, body.primary-03 #secondary, body.primary-03 #tertiary { height: 400px; }
 body.primary-03 #quaternary, body.primary-03 #quinary, body.primary-03 footer { display: none; height: 0; width: 0; }
@@ -193,7 +193,12 @@ body.primary-24 #primary { height: 400px; }
 body.primary-24 #secondary, body.primary-24 #tertiary, body.primary-24 #quaternary, body.primary-24 #quinary, body.primary-24 footer { display: none; height: 0; width: 0; }
 body.primary-25 > #primary { margin: 0 1%; padding: 0 1%; width: 96%; }
 body.primary-25 #primary { height: 400px; }
-body.primary-25 #secondary, body.primary-25 #tertiary, body.primary-25 #quaternary, body.primary-25 #quinary, body.primary-25 footer { display: none; height: 0; width: 0; }
+body.primary-25 header, body.primary-25 #secondary, body.primary-25 #tertiary, body.primary-25 #quaternary, body.primary-25 #quinary, body.primary-25 footer { display: none; height: 0; width: 0; }
+
+#layout_picker { bottom: 0; left: 0; position: fixed; overflow: auto; top: 0; width: 150px; }
+#layout_picker li { cursor: pointer; text-align: center; }
+#layout_picker li:hover { background-color: #dddddd; }
+#layout_picker li img { margin: 0.5em auto; }
 
 header { background-color: yellow; }
 

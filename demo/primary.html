@@ -7,44 +7,45 @@
     <script type="text/javascript">
       //<![CDATA[
         window.onload = function () {
-          document.getElementById('selector').onchange = function () {
-            document.body.className = 'primary-' + this.options[this.selectedIndex].value;
-          };
+          var pickers = document.getElementsByTagName('li');
+          for (var index = 0; index < pickers.length; index++) {
+            pickers[index].onclick = function () {
+              document.body.className = 'primary-' + this.getAttribute('data-layout_id');
+            };
+          }
         };
       //]]>
     </script>
   </head>
   <body>
-    <header>
-      <select id="selector">
-        <option>header</option>
-        <option value="01">Primary Layout 01</option>
-        <option value="02">Primary Layout 02</option>
-        <option value="03">Primary Layout 03</option>
-        <option value="04">Primary Layout 04</option>
-        <option value="05">Primary Layout 05</option>
-        <option value="06">Primary Layout 06</option>
-        <option value="07">Primary Layout 07</option>
-        <option value="08">Primary Layout 08</option>
-        <option value="09">Primary Layout 09</option>
-        <option value="10">Primary Layout 10</option>
-        <option value="11">Primary Layout 11</option>
-        <option value="12">Primary Layout 12</option>
-        <option value="13">Primary Layout 13</option>
-        <option value="14">Primary Layout 14</option>
-        <option value="15">Primary Layout 15</option>
-        <option value="16">Primary Layout 16</option>
-        <option value="17">Primary Layout 17</option>
-        <option value="18">Primary Layout 18</option>
-        <option value="19">Primary Layout 19</option>
-        <option value="20">Primary Layout 20</option>
-        <option value="21">Primary Layout 21</option>
-        <option value="22">Primary Layout 22</option>
-        <option value="23">Primary Layout 23</option>
-        <option value="24">Primary Layout 24</option>
-        <option value="25">Primary Layout 25</option>
-      </select>
-    </header>
+    <ol id="layout_picker">
+      <li data-layout_id="01"><img src="images/primary-01.png" alt="Primary Layout 01" /></li>
+      <li data-layout_id="02"><img src="images/primary-02.png" alt="Primary Layout 02" /></li>
+      <li data-layout_id="03"><img src="images/primary-03.png" alt="Primary Layout 03" /></li>
+      <li data-layout_id="04"><img src="images/primary-04.png" alt="Primary Layout 04" /></li>
+      <li data-layout_id="05"><img src="images/primary-05.png" alt="Primary Layout 05" /></li>
+      <li data-layout_id="06"><img src="images/primary-06.png" alt="Primary Layout 06" /></li>
+      <li data-layout_id="07"><img src="images/primary-07.png" alt="Primary Layout 07" /></li>
+      <li data-layout_id="08"><img src="images/primary-08.png" alt="Primary Layout 08" /></li>
+      <li data-layout_id="09"><img src="images/primary-09.png" alt="Primary Layout 09" /></li>
+      <li data-layout_id="10"><img src="images/primary-10.png" alt="Primary Layout 10" /></li>
+      <li data-layout_id="11"><img src="images/primary-11.png" alt="Primary Layout 11" /></li>
+      <li data-layout_id="12"><img src="images/primary-12.png" alt="Primary Layout 12" /></li>
+      <li data-layout_id="13"><img src="images/primary-13.png" alt="Primary Layout 13" /></li>
+      <li data-layout_id="14"><img src="images/primary-14.png" alt="Primary Layout 14" /></li>
+      <li data-layout_id="15"><img src="images/primary-15.png" alt="Primary Layout 15" /></li>
+      <li data-layout_id="16"><img src="images/primary-16.png" alt="Primary Layout 16" /></li>
+      <li data-layout_id="17"><img src="images/primary-17.png" alt="Primary Layout 17" /></li>
+      <li data-layout_id="18"><img src="images/primary-18.png" alt="Primary Layout 18" /></li>
+      <li data-layout_id="19"><img src="images/primary-19.png" alt="Primary Layout 19" /></li>
+      <li data-layout_id="20"><img src="images/primary-20.png" alt="Primary Layout 20" /></li>
+      <li data-layout_id="21"><img src="images/primary-21.png" alt="Primary Layout 21" /></li>
+      <li data-layout_id="22"><img src="images/primary-22.png" alt="Primary Layout 22" /></li>
+      <li data-layout_id="23"><img src="images/primary-23.png" alt="Primary Layout 23" /></li>
+      <li data-layout_id="24"><img src="images/primary-24.png" alt="Primary Layout 24" /></li>
+      <li data-layout_id="25"><img src="images/primary-25.png" alt="Primary Layout 25" /></li>
+    </ol>
+    <header>header</header>
     <section id='primary'>section#primary</section>
     <section id='secondary'>section#secondary</section>
     <section id='tertiary'>section#tertiary</section>

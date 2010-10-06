@@ -31,13 +31,14 @@ body
     #{$primary-selector-secondary},
     #{$primary-selector-tertiary}
       height: 400px
+    #{$primary-selector-header},
     #{$primary-selector-quaternary},
     #{$primary-selector-quinary},
     #{$primary-selector-footer}
       @include disabled
 
   &.primary-02
-    @include primary-layout-three
+    @include primary-layout-three(true, 2, 6)
     #{$primary-selector-header}
       height: 150px
     #{$primary-selector-primary},
@@ -50,7 +51,7 @@ body
       @include disabled
 
   &.primary-03
-    @include primary-layout-three(true, 3.333, 3.333)
+    @include primary-layout-three
     #{$primary-selector-header}
       height: 150px
     #{$primary-selector-primary},
@@ -322,12 +323,28 @@ body
     @include primary-layout-one(false)
     #{$primary-selector-primary}
       height: 400px
+    #{$primary-selector-header},
     #{$primary-selector-secondary},
     #{$primary-selector-tertiary},
     #{$primary-selector-quaternary},
     #{$primary-selector-quinary},
     #{$primary-selector-footer}
       @include disabled
+
+#layout_picker
+  bottom: 0
+  left: 0
+  position: fixed
+  overflow: auto
+  top: 0
+  width: 150px
+  li
+    cursor: pointer
+    text-align: center
+    &:hover
+      background-color: #DDDDDD
+    img
+      margin: 0.5em auto
 
 header
   background-color: #FFFF00
