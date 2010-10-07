@@ -13,7 +13,8 @@ $primary-selector-footer: footer !default
 $primary-column-margin: 1% !default
 $primary-column-padding: 1% !default
 $primary-column-count: 10 !default
-$primary-column-width: 100% / $primary-column-count
+$primary-column-total-width: 100% !default
+$primary-column-width: $primary-column-total-width / $primary-column-count
 
 @mixin primary-layout-one($include-header: true, $include-footer: false)
   >
