@@ -3,6 +3,14 @@
     @include primary-column($columns)
 
 @mixin primary-column($count: 1)
+  @if $count == full
+    $count: $primary-column-count
+  @else if $count == half
+    $count: $primary-column-count / 2
+  @else if $count == third
+    $count: $primary-column-count / 3
+  @else if $count == fourth
+    $count: $primary-column-count / 4
   margin: 0 $primary-column-margin
   padding: 0 $primary-column-padding
   width: ($primary-column-width * $count) - ($primary-column-margin * 2) - ($primary-column-padding * 2)
