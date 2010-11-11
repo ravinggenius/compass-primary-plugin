@@ -4,6 +4,11 @@
   #{$primary-selector-header}
     @include primary-column($columns)
 
+@mixin primary-footer($columns: $primary-column-count)
+  #{$primary-selector-footer}
+    @include primary-column($columns)
+    float: left
+
 @mixin primary-column($count: 1)
   @if $count == full
     $count: $primary-column-count
@@ -38,8 +43,7 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
     #{$primary-selector-primary}
       @include primary-column(full)
     @if $include-footer
-      #{$primary-selector-footer}
-        @include primary-column(full)
+      @include primary-footer
 
 @mixin primary-layout-two($include-header: true, $columns-primary: $primary-column-count / 2, $columns-secondary: $primary-column-count - $columns-primary)
   >
