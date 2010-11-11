@@ -117,8 +117,8 @@ body.primary-17 > #primary { margin: 0 5px; padding: 0 5px; width: 172px; }
 body.primary-17 > #secondary { margin: 0 5px; padding: 0 5px; width: 556px; }
 body.primary-17 > #tertiary { margin: 0 5px; padding: 0 5px; width: 172px; }
 body.primary-17 > #primary, body.primary-17 > #tertiary { margin-top: -150px; min-height: 151px; }
-body.primary-17 #primary, body.primary-17 #tertiary { height: 400px; }
-body.primary-17 #secondary { height: 250px; }
+body.primary-17 #primary, body.primary-17 #tertiary { height: 600px; }
+body.primary-17 #secondary { height: 450px; }
 body.primary-18 > header { margin: 0 5px; padding: 0 5px; width: 940px; }
 body.primary-18 > #primary, body.primary-18 > #secondary, body.primary-18 > #tertiary, body.primary-18 > #quaternary { float: left; }
 body.primary-18 > #primary { margin: 0 5px; padding: 0 5px; width: 940px; }
