@@ -186,8 +186,10 @@ body.primary-25 #primary { height: 400px; }
 
 #layout_picker { bottom: 0; left: 0; position: fixed; overflow: auto; top: 0; width: 150px; }
 #layout_picker li { cursor: pointer; text-align: center; }
+#layout_picker li:before { content: attr(data-layout_id); display: block; position: relative; top: 0.25em; }
 #layout_picker li:hover { background-color: #dddddd; }
 #layout_picker li img { margin: 0.5em auto; }
+#layout_picker li + li { border-top: 1px solid #cccccc; }
 
 header { background-color: yellow; }
 
