@@ -45,7 +45,7 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
     @if $include-footer
       @include primary-footer
 
-@mixin primary-layout-two($include-header: true, $columns-primary: $primary-column-count / 2, $columns-secondary: $primary-column-count - $columns-primary)
+@mixin primary-layout-two($include-header: true, $include-footer: false, $columns-primary: $primary-column-count / 2, $columns-secondary: $primary-column-count - $columns-primary)
   >
     @if $include-header
       @include primary-header
@@ -56,8 +56,10 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
       @include primary-column($columns-primary)
     #{$primary-selector-secondary}
       @include primary-column($columns-secondary)
+    @if $include-footer
+      @include primary-footer
 
-@mixin primary-layout-three($include-header: true, $columns-primary: $primary-column-count / 3, $columns-secondary: $primary-column-count - ($columns-primary * 2), $columns-tertiary: $columns-primary)
+@mixin primary-layout-three($include-header: true, $include-footer: false, $columns-primary: $primary-column-count / 3, $columns-secondary: $primary-column-count - ($columns-primary * 2), $columns-tertiary: $columns-primary)
   >
     @if $include-header
       @include primary-header
@@ -71,6 +73,8 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
       @include primary-column($columns-secondary)
     #{$primary-selector-tertiary}
       @include primary-column($columns-tertiary)
+    @if $include-footer
+      @include primary-footer
 
 @mixin primary-layout-three-alternate($header-height, $columns-header: $primary-column-count * 0.6, $columns-primary: ($primary-column-count - $columns-header) / 2, $columns-tertiary: $primary-column-count - $columns-header - $columns-primary)
   >
@@ -94,7 +98,7 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
       margin-top: -$header-height
       min-height: $header-height + 1
 
-@mixin primary-layout-four($include-header: true)
+@mixin primary-layout-four($include-header: true, $include-footer: false)
   >
     @if $include-header
       @include primary-header
@@ -104,6 +108,8 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
     #{$primary-selector-quaternary}
       @include primary-column(fourth)
       float: left
+    @if $include-footer
+      @include primary-footer
 
 @mixin primary-layout-one-one($include-header: true, $include-footer: false)
   >
@@ -113,10 +119,9 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
     #{$primary-selector-secondary}
       @include primary-column(full)
     @if $include-footer
-      #{$primary-selector-footer}
-        @include primary-column(full)
+      @include primary-footer
 
-@mixin primary-layout-one-two($include-header: true, $columns-secondary: $primary-column-count / 2, $columns-tertiary: $columns-secondary)
+@mixin primary-layout-one-two($include-header: true, $include-footer: false, $columns-secondary: $primary-column-count / 2, $columns-tertiary: $columns-secondary)
   >
     @if $include-header
       @include primary-header
@@ -130,8 +135,10 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
       @include primary-column($columns-secondary)
     #{$primary-selector-tertiary}
       @include primary-column($columns-tertiary)
+    @if $include-footer
+      @include primary-footer
 
-@mixin primary-layout-one-three($include-header: true, $columns-secondary: $primary-column-count / 3, $columns-tertiary: $primary-column-count - ($columns-secondary * 2), $columns-quaternary: $columns-secondary)
+@mixin primary-layout-one-three($include-header: true, $include-footer: false, $columns-secondary: $primary-column-count / 3, $columns-tertiary: $primary-column-count - ($columns-secondary * 2), $columns-quaternary: $columns-secondary)
   >
     @if $include-header
       @include primary-header
@@ -148,8 +155,10 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
       @include primary-column($columns-tertiary)
     #{$primary-selector-quaternary}
       @include primary-column($columns-quaternary)
+    @if $include-footer
+      @include primary-footer
 
-@mixin primary-layout-two-one($include-header: true, $columns-primary: $primary-column-count / 2, $columns-secondary: $primary-column-count - $columns-primary)
+@mixin primary-layout-two-one($include-header: true, $include-footer: false, $columns-primary: $primary-column-count / 2, $columns-secondary: $primary-column-count - $columns-primary)
   >
     @if $include-header
       @include primary-header
@@ -163,8 +172,10 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
       @include primary-column($columns-secondary)
     #{$primary-selector-tertiary}
       @include primary-column(full)
+    @if $include-footer
+      @include primary-footer
 
-@mixin primary-layout-two-two($include-header: true)
+@mixin primary-layout-two-two($include-header: true, $include-footer: false)
   >
     @if $include-header
       @include primary-header
@@ -174,8 +185,10 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
     #{$primary-selector-quaternary}
       float: left
       @include primary-column(half)
+    @if $include-footer
+      @include primary-footer
 
-@mixin primary-layout-three-one($include-header: true, $columns-primary: $primary-column-count / 3, $columns-secondary: $primary-column-count - ($columns-primary * 2), $columns-tertiary: $columns-primary)
+@mixin primary-layout-three-one($include-header: true, $include-footer: false, $columns-primary: $primary-column-count / 3, $columns-secondary: $primary-column-count - ($columns-primary * 2), $columns-tertiary: $columns-primary)
   >
     @if $include-header
       @include primary-header
@@ -192,8 +205,10 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
       @include primary-column($columns-tertiary)
     #{$primary-selector-quaternary}
       @include primary-column(full)
+    @if $include-footer
+      @include primary-footer
 
-@mixin primary-layout-three-two($include-header: true, $columns-primary: $primary-column-count / 3, $columns-secondary: $primary-column-count - ($columns-primary * 2), $columns-tertiary: $columns-primary, $columns-quaternary: $primary-column-count / 2, $columns-quinary: $primary-column-count - $columns-quaternary)
+@mixin primary-layout-three-two($include-header: true, $include-footer: false, $columns-primary: $primary-column-count / 3, $columns-secondary: $primary-column-count - ($columns-primary * 2), $columns-tertiary: $columns-primary, $columns-quaternary: $primary-column-count / 2, $columns-quinary: $primary-column-count - $columns-quaternary)
   >
     @if $include-header
       @include primary-header
@@ -213,8 +228,10 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
       @include primary-column($columns-quaternary)
     #{$primary-selector-quinary}
       @include primary-column($columns-quinary)
+    @if $include-footer
+      @include primary-footer
 
-@mixin primary-layout-full-half-half($min-height-full, $include-header: true, $columns-full: $primary-column-count / 2, $columns-half: $primary-column-count - $columns-full)
+@mixin primary-layout-full-half-half($min-height-full, $include-header: true, $include-footer: false, $columns-full: $primary-column-count / 2, $columns-half: $primary-column-count - $columns-full)
   >
     @if $include-header
       @include primary-header
@@ -229,9 +246,11 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
     #{$primary-selector-tertiary}
       @include primary-column($columns-half)
       min-height: $min-height-full / 2
+    @if $include-footer
+      @include primary-footer
 
 // FIXME
-@mixin primary-layout-half-half-full($min-height-full, $include-header: true, $columns-full: $primary-column-count / 2, $columns-half: $primary-column-count - $columns-full)
+@mixin primary-layout-half-half-full($min-height-full, $include-header: true, $include-footer: false, $columns-full: $primary-column-count / 2, $columns-half: $primary-column-count - $columns-full)
   >
     @include primary-header
     #{$primary-selector-primary},
@@ -249,8 +268,10 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
       min-height: $min-height-full
       position: relative
       top: -200px
+    @if $include-footer
+      @include primary-footer
 
-@mixin primary-layout-full-full-half-half($min-height-full, $include-header: true, $columns-full: $primary-column-count / 4, $columns-half: $primary-column-count - ($columns-full * 2))
+@mixin primary-layout-full-full-half-half($min-height-full, $include-header: true, $include-footer: false, $columns-full: $primary-column-count / 4, $columns-half: $primary-column-count - ($columns-full * 2))
   >
     @if $include-header
       @include primary-header
@@ -267,9 +288,11 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
     #{$primary-selector-quaternary}
       @include primary-column($columns-half)
       min-height: $min-height-full / 2
+    @if $include-footer
+      @include primary-footer
 
 // FIXME
-@mixin primary-layout-half-half-full-full($min-height-full, $include-header: true, $columns-full: $primary-column-count / 4, $columns-half: $primary-column-count - ($columns-full * 2))
+@mixin primary-layout-half-half-full-full($min-height-full, $include-header: true, $include-footer: false, $columns-full: $primary-column-count / 4, $columns-half: $primary-column-count - ($columns-full * 2))
   >
     @if $include-header
       @include primary-header
@@ -289,3 +312,5 @@ $primary-column-width: $primary-column-total-width / $primary-column-count
       min-height: $min-height-full
       position: relative
       top: -200px
+    @if $include-footer
+      @include primary-footer

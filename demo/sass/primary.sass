@@ -43,7 +43,7 @@ body
       @extend .disabled
 
   &.primary-02
-    @include primary-layout-three(true, 2, 6)
+    @include primary-layout-three(true, false, 2, 6)
     #{$primary-selector-header}
       height: 150px
     #{$primary-selector-primary},
@@ -82,7 +82,7 @@ body
       @extend .disabled
 
   &.primary-05
-    @include primary-layout-two(true, 3)
+    @include primary-layout-two(true, false, 3)
     #{$primary-selector-header}
       height: 150px
     #{$primary-selector-primary},
@@ -95,7 +95,7 @@ body
       @extend .disabled
 
   &.primary-06
-    @include primary-layout-two(true, 7)
+    @include primary-layout-two(true, false, 7)
     #{$primary-selector-header}
       height: 150px
     #{$primary-selector-primary},
@@ -108,7 +108,7 @@ body
       @extend .disabled
 
   &.primary-07
-    @include primary-layout-three(true, 2, 2, 6)
+    @include primary-layout-three(true, false, 2, 2, 6)
     #{$primary-selector-header}
       height: 150px
     #{$primary-selector-primary},
@@ -121,7 +121,7 @@ body
       @extend .disabled
 
   &.primary-08
-    @include primary-layout-three(true, 6, 2, 2)
+    @include primary-layout-three(true, false, 6, 2, 2)
     #{$primary-selector-header}
       height: 150px
     #{$primary-selector-primary},
@@ -135,11 +135,12 @@ body
 
   &.primary-09
     @include primary-layout-one(true, true)
-    #{$primary-selector-header},
-    #{$primary-selector-footer}
+    #{$primary-selector-header}
       height: 150px
     #{$primary-selector-primary}
       height: 400px
+    #{$primary-selector-footer}
+      height: 100px
     #{$primary-selector-secondary},
     #{$primary-selector-tertiary},
     #{$primary-selector-quaternary},
@@ -148,13 +149,14 @@ body
 
   &.primary-10
     @include primary-layout-one-one(true, true)
-    #{$primary-selector-header},
-    #{$primary-selector-footer}
+    #{$primary-selector-header}
       height: 150px
     #{$primary-selector-primary}
       height: 100px
     #{$primary-selector-secondary}
       height: 300px
+    #{$primary-selector-footer}
+      height: 100px
     #{$primary-selector-tertiary},
     #{$primary-selector-quaternary},
     #{$primary-selector-quinary}
@@ -247,7 +249,7 @@ body
       @extend .disabled
 
   &.primary-19
-    @include primary-layout-two-one(true, 3, 7)
+    @include primary-layout-two-one(true, true, 3, 7)
     #{$primary-selector-header}
       height: 150px
     #{$primary-selector-primary},
@@ -255,13 +257,14 @@ body
       height: 100px
     #{$primary-selector-tertiary}
       height: 300px
-    #{$primary-selector-quaternary},
-    #{$primary-selector-quinary},
     #{$primary-selector-footer}
+      height: 100px
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary}
       @extend .disabled
 
   &.primary-20
-    @include primary-layout-two-one(true, 7, 3)
+    @include primary-layout-two-one(true, true, 7, 3)
     #{$primary-selector-header}
       height: 150px
     #{$primary-selector-primary},
@@ -269,13 +272,14 @@ body
       height: 100px
     #{$primary-selector-tertiary}
       height: 300px
-    #{$primary-selector-quaternary},
-    #{$primary-selector-quinary},
     #{$primary-selector-footer}
+      height: 100px
+    #{$primary-selector-quaternary},
+    #{$primary-selector-quinary}
       @extend .disabled
 
   &.primary-21
-    @include primary-layout-three-one
+    @include primary-layout-three-one(true, true)
     #{$primary-selector-header}
       height: 150px
     #{$primary-selector-primary},
@@ -284,8 +288,9 @@ body
       height: 100px
     #{$primary-selector-quaternary}
       height: 300px
-    #{$primary-selector-quinary},
     #{$primary-selector-footer}
+      height: 100px
+    #{$primary-selector-quinary}
       @extend .disabled
 
   &.primary-22
