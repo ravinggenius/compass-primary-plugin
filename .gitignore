@@ -1,1 +1,6 @@
-.sass-cache
+*~
+*.gem
+.bundle
+Gemfile.lock
+pkg/*
+.redcar
